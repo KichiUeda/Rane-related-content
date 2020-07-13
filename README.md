@@ -8,9 +8,9 @@ This service uses a PostgreSQL database. PostgreSQL must be installed and runnin
 
 ### Tech Stack
 
-Node
-React
-PostgreSQL
+Node\
+React\
+PostgreSQL\
 AWS (for deployment)
 
 ## Installation
