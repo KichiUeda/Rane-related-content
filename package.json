@@ -1,0 +1,42 @@
+{
+  "name": "rane-related-content",
+  "version": "1.0.0",
+  "description": "The purpose of this service is to provide related content data for products associated with the Humble Bundle item page clone. This includes the raw data, as well as, a renderable component for the item page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:dev": "nodemon ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KichiUeda/Rane-related-content.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KichiUeda/Rane-related-content/issues"
+  },
+  "homepage": "https://github.com/KichiUeda/Rane-related-content#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "knex": "^0.21.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
