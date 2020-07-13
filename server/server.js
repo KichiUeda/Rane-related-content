@@ -8,7 +8,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(helmet.noSniff());
-app.use(express.static(path.resolve(__dirname, "public")));
+app.use(express.static(path.resolve(__dirname, "../public")));
 
 app.get("/", (req, res) => {
   res.status(200).send("index");
