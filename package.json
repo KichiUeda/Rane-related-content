@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "setupDB": "node ./db/setup.js",
     "server:dev": "nodemon ./server/index.js"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/KichiUeda/Rane-related-content#readme",
   "dependencies": {
     "@babel/runtime": "^7.10.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "knex": "^0.21.2",
