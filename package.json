@@ -4,11 +4,16 @@
   "description": "The purpose of this service is to provide related content data for products associated with the Humble Bundle item page clone. This includes the raw data, as well as, a renderable component for the item page.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "project:up": "npx knex migrate:latest && npx knex seed:run",
     "project:down": "npx knex migrate:down",
     "server": "node ./server/index.js",
     "server:dev": "nodemon ./server/index.js"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/jestSetup.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -38,8 +43,10 @@
     "@babel/plugin-transform-runtime": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "axios-test-instance": "^3.1.1",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
