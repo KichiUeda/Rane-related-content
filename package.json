@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setupDB": "node ./db/setup.js",
+    "project:up": "npx knex migrate:latest && npx knex seed:run",
+    "project:down": "npx knex migrate:down",
+    "server": "node ./server/index.js",
     "server:dev": "nodemon ./server/index.js"
   },
   "repository": {
