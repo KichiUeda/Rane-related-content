@@ -27,7 +27,7 @@ describe("backend tests", () => {
 
   describe("GET /related/febits", () => {
     test("returns 400 when not passed an id", async () => {
-      let { status } = await instance.get("/related/febits");
+      let { status } = await instance.get("related/febits");
       expect(status).toBe(400);
     });
   });
