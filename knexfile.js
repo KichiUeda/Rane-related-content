@@ -9,7 +9,7 @@ module.exports = {
       password: process.env.PGPASSWORD,
     },
     migrations: {
-      tableName: "related_content",
+      tableName: "related_id_join",
     },
   },
 
@@ -21,7 +21,19 @@ module.exports = {
       password: process.env.PGPASSWORD,
     },
     migrations: {
-      tableName: "related_content",
+      tableName: "related_id_join",
+    },
+  },
+
+  test: {
+    client: "pg",
+    connection: {
+      database: "related_content",
+      user: process.env.PGUSER,
+      password: process.env.PGPASSWORD,
+    },
+    migrations: {
+      tableName: "related_id_join",
     },
   },
 };
