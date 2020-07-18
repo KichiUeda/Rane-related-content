@@ -21,4 +21,8 @@ describe("GET /related/:product_id", () => {
     let { status } = await server.get("/related/122");
     expect(status).toBe(404);
   });
+  test("returns status 400 when not passed an id", () => {
+    let { status } = await server.get("/related");
+    expect(status).toBe(400);
+  })
 });
