@@ -8,7 +8,7 @@ import { AiOutlineStar } from "react-icons/ai";
     Platforms - Price
 */
 
-const Card = ({ title, coverImage, platforms, price }) => {
+const Card = ({ title, coverImage, systemIcons, price }) => {
   return (
     <ColWrapper aria-label={`View ${title}`}>
       <CoverWrapper data-testid="cover-image">
@@ -21,7 +21,7 @@ const Card = ({ title, coverImage, platforms, price }) => {
         </IconWrapper>
       </RowWrapper>
       <RowWrapper>
-        <PlatformWrapper data-testid="platforms">{platforms}</PlatformWrapper>
+        <PlatformWrapper data-testid="platforms">{systemIcons}</PlatformWrapper>
         <PriceWrapper data-testid="price-div">{price}</PriceWrapper>
       </RowWrapper>
     </ColWrapper>
