@@ -2,17 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineStar } from "react-icons/ai";
 
+import { RowWrapper, ColWrapper } from "../GlobalStyles";
+
 /*
     Cover
     Title - Star
     Platforms - Price
 */
 
-const Card = ({ title, coverImage, systemIcons, price }) => {
+const Card = ({ title, thumbnail, systemIcons, priceData }) => {
   return (
     <ColWrapper aria-label={`View ${title}`}>
       <CoverWrapper data-testid="cover-image">
-        <img src={coverImage} />
+        <img src={thumbnail} />
       </CoverWrapper>
       <RowWrapper>
         <TitleWrapper data-testid="title-span">{title}</TitleWrapper>
@@ -21,8 +23,10 @@ const Card = ({ title, coverImage, systemIcons, price }) => {
         </IconWrapper>
       </RowWrapper>
       <RowWrapper>
-        <PlatformWrapper data-testid="platforms">{systemIcons}</PlatformWrapper>
-        <PriceWrapper data-testid="price-div">{price}</PriceWrapper>
+        <PlatformWrapper data-testid="platforms">
+          {systemIcons.platforms[0]}
+        </PlatformWrapper>
+        <PriceWrapper data-testid="price-div">{priceData.price}</PriceWrapper>
       </RowWrapper>
     </ColWrapper>
   );
@@ -36,16 +40,6 @@ const TitleWrapper = styled.span`
 
 const CoverWrapper = styled.div`
   width: 100%;
-`;
-
-const ColWrapper = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-`;
-
-const RowWrapper = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
 `;
 
 const IconWrapper = styled.div`

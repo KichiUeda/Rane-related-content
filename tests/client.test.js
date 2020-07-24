@@ -7,9 +7,10 @@ import Carousel from "../client/components/Carousel";
 describe("front end tests", () => {
   const cardData = [
     {
-      coverImage: "https://example.com/img.jpg",
+      product_id: 1,
+      thumbnail: "https://example.com/img.jpg",
       title: "A cool game",
-      price: {
+      priceData: {
         price: 49,
         promotion: 4,
       },
@@ -46,9 +47,10 @@ describe("front end tests", () => {
       },
     },
     {
-      coverImage: "https://example.com/img.jpg",
+      product_id: 2,
+      thumbnail: "https://example.com/img.jpg",
       title: "A cool game 2",
-      price: {
+      priceData: {
         price: 49,
         promotion: 4,
       },
@@ -85,9 +87,10 @@ describe("front end tests", () => {
       },
     },
     {
-      coverImage: "https://example.com/img.jpg",
+      product_id: 3,
+      thumbnail: "https://example.com/img.jpg",
       title: "A cool game 3",
-      price: {
+      priceData: {
         price: 49,
         promotion: 4,
       },
@@ -124,9 +127,10 @@ describe("front end tests", () => {
       },
     },
     {
-      coverImage: "https://example.com/img.jpg",
+      product_id: 4,
+      thumbnail: "https://example.com/img.jpg",
       title: "A cool game 4",
-      price: {
+      priceData: {
         price: 49,
         promotion: 4,
       },
@@ -171,7 +175,7 @@ describe("front end tests", () => {
             Platforms - Price
     */
     test("It renders to the screen", () => {
-      const { getByLabelText, getByTestId } = render(<Card {...cardData} />);
+      const { getByLabelText, getByTestId } = render(<Card {...cardData[0]} />);
 
       expect(getByLabelText(/View/i)).toBeTruthy();
       expect(getByTestId("cover-image")).toBeTruthy();
