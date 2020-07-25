@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -140,4 +140,14 @@ table {
 body {
   font-size: 62.5%;
 }
+`;
+
+export const ColWrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+`;
+
+export const RowWrapper = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
 `;
