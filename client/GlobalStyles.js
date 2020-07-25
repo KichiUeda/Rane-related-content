@@ -157,6 +157,7 @@ export const ColWrapper = styled.div`
   padding: ${({ padding }) => (padding ? padding : "0")};
   background-color: ${({ backgroundColor }) =>
     backgroundColor ? backgroundColor : "none"};
+  cursor: ${({ cursor }) => (cursor ? cursor : "arrow")};
 `;
 
 export const RowWrapper = styled.div`
@@ -172,4 +173,5 @@ export const RowWrapper = styled.div`
   padding: ${({ padding }) => (padding ? padding : "0")};
   background-color: ${({ backgroundColor }) =>
     backgroundColor ? backgroundColor : "none"};
+  cursor: ${({ cursor }) => (cursor ? cursor : "arrow")};
 `;
