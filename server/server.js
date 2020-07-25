@@ -17,11 +17,15 @@ app.use(express.static(path.resolve(__dirname, "../public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.status(200).send("index");
-});
+// app.get("/:product_id", (req, res) => {
+//   res.status(200).sendFile("index");
+// });
 
 app.use("/related/febits", febitsRoutes);
 app.use("/related", relatedRoutes);
+
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
+});
 
 module.exports = app;

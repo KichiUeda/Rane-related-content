@@ -11,6 +11,7 @@ import { RowWrapper, ColWrapper } from "../GlobalStyles";
 */
 
 const Card = ({ title, thumbnail, systemIcons, priceData }) => {
+  console.log("Rendering a card?");
   return (
     <ColWrapper aria-label={`View ${title}`}>
       <CoverWrapper data-testid="cover-image">
