@@ -10,7 +10,7 @@ route.get("/", (req, res) => {
 route.get("/:product_id", async (req, res) => {
   const { product_id } = req.params;
   try {
-    const systemIcons = await getData(
+    let systemIcons = await getData(
       process.env.OVERVIEW_SERVICE,
       "system_req/platforms/",
       product_id
@@ -31,9 +31,24 @@ route.get("/:product_id", async (req, res) => {
       product_id
     );
 
+    let platforms = systemIcons.platforms.reduce((accum, current) => {
+      console.log(accum);
+      accum.push(current[2]);
+
+      return accum;
+    }, []);
+
+    let os = systemIcons.os.reduce((accum, current) => {
+      console.log(accum);
+      accum.push(current[2]);
+
+      return accum;
+    }, []);
+
     res.status(200).json({
       product_id,
-      systemIcons,
+      platforms,
+      os,
       title,
       thumbnail,
       priceData,
