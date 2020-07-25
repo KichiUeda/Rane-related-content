@@ -11,7 +11,7 @@ import { RowWrapper, ColWrapper } from "../GlobalStyles";
     Platforms - Price
 */
 
-const Card = ({ title, thumbnail, platforms, os, priceData }) => {
+const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
   const [price, setPrice] = useState(`$${priceData.price}.00`);
   const [hovering, setHovering] = useState(false);
   const handleMouseOver = () => {
@@ -22,12 +22,17 @@ const Card = ({ title, thumbnail, platforms, os, priceData }) => {
     setPrice(`$${priceData.price}.00`);
     setHovering(false);
   };
+  const handleClick = () => {
+    document.location.pathname = "/" + product_id;
+  };
   return (
     <ColWrapper
       alignItem="flex-start"
       width="270px"
       margin="0 20px 0 0"
+      cursor="pointer"
       aria-label={`View ${title}`}
+      onClick={handleClick}
     >
       <CoverWrapper data-testid="cover-image">
         <img src={thumbnail} />
