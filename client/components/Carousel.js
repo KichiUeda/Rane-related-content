@@ -14,7 +14,7 @@ const Carousel = ({ cardData }) => {
           justify="flex-start"
           alignItems="flex-start"
           alignContent="flex-start"
-          margin="0 auto"
+          width="1125px"
         >
           <SectionHead>Related content</SectionHead>
           <RowWrapper
