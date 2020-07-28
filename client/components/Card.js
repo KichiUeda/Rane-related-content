@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
-
+import "../reset.css";
 import { RowWrapper, ColWrapper } from "../GlobalStyles";
 
 /*
@@ -15,7 +15,7 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
   const [price, setPrice] = useState(`$${priceData.price}.00`);
   const [hovering, setHovering] = useState(false);
   const handleMouseOver = () => {
-    setPrice("BUY");
+    setPrice("ADD");
     setHovering(true);
   };
   const handleMouseLeave = () => {
@@ -77,7 +77,7 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
           onMouseLeave={handleMouseLeave}
         >
           <CartIconWrapper visible={hovering}>
-            <FaShoppingCart />
+            <FaShoppingCart style={{ fontSize: "14px" }} />
           </CartIconWrapper>
           {price}
         </PriceWrapper>
@@ -89,11 +89,13 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
 export default Card;
 
 const TitleWrapper = styled.span`
-  font-size: 1.2rem;
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
   width: 227px;
 `;
 
 const CoverWrapper = styled.div`
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   img {
     width: 270px;
     height: auto;
@@ -101,6 +103,7 @@ const CoverWrapper = styled.div`
 `;
 
 const IconWrapper = styled.div`
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 17px;
   img {
     height: 17px;
@@ -109,20 +112,24 @@ const IconWrapper = styled.div`
 `;
 
 const PlatformWrapper = styled.div`
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: row nowrap;
-  font-size: 1rem;
+  align-items: center;
+  align-content: center;
+  font-size: 1.2rem;
 `;
 
 const PriceWrapper = styled.div`
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #3b3e48;
-  padding-top: 4px;
+  padding-top: 2px;
   height: 28px;
   width: 65px;
   border: 1px solid black;

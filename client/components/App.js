@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import { GlobalStyles } from "../GlobalStyles";
+import "../reset.css";
 import Carousel from "./Carousel";
 
 import { getCardData } from "../utils/ajaxHelper";
@@ -21,7 +20,6 @@ const App = () => {
   }, []);
   return (
     <div>
-      <GlobalStyles />
       <div>
         <Carousel cardData={cardData} />
       </div>
