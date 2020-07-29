@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../reset.css";
+//import "../reset.css";
 import Carousel from "./Carousel";
 
 import { getCardData } from "../utils/ajaxHelper";

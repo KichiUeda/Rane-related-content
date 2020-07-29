@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineStar } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
-import "../reset.css";
+//import "../reset.css";
 import { RowWrapper, ColWrapper } from "../GlobalStyles";
 
 /*
