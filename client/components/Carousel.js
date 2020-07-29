@@ -2,7 +2,7 @@ import React from "react";
 import ReactLoading from "react-loading";
 import styled from "styled-components";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import "../reset.css";
+//import "../reset.css";
 import { RowWrapper, ColWrapper } from "../GlobalStyles";
 import Card from "./Card";
 
@@ -14,7 +14,7 @@ const Carousel = ({ cardData }) => {
           justify="flex-start"
           alignItems="flex-start"
           alignContent="flex-start"
-          width="1125px"
+          width="1140px"
         >
           <SectionHead>Related content</SectionHead>
           <RowWrapper
