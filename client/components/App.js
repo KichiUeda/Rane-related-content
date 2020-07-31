@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 //import "../reset.css";
 import Carousel from "./Carousel";
 
-import { ResetWrapper } from "../GlobalStyles";
-
 import { getCardData } from "../utils/ajaxHelper";
 
 const App = () => {
@@ -22,9 +20,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      <ResetWrapper>
-        <Carousel cardData={cardData} />
-      </ResetWrapper>
+      <Carousel cardData={cardData} />
     </div>
   );
 };
