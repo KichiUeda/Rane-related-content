@@ -20,9 +20,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      <div>
-        <Carousel cardData={cardData} />
-      </div>
+      <Carousel cardData={cardData} />
     </div>
   );
 };

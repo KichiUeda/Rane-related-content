@@ -30,6 +30,7 @@
   "homepage": "https://github.com/KichiUeda/Rane-related-content#readme",
   "dependencies": {
     "@babel/runtime": "^7.10.4",
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "cors": "^2.8.5",

@@ -41,7 +41,7 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
         height="53px"
         padding="10px"
         justify="space-between"
-        width="100%"
+        width="270px"
         backgroundColor="#FFFFFF"
       >
         <TitleWrapper data-testid="title-span">{title}</TitleWrapper>
@@ -51,7 +51,7 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
       </RowWrapper>
       <RowWrapper
         backgroundColor="#F9F9F9"
-        width="100%"
+        width="270px"
         justify="space-between"
         height="50px"
         padding="10px"
@@ -90,12 +90,13 @@ export default Card;
 
 const TitleWrapper = styled.span`
   font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1em;
   width: 227px;
 `;
 
 const CoverWrapper = styled.div`
   font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 156px;
   img {
     width: 270px;
     height: auto;
@@ -117,7 +118,7 @@ const PlatformWrapper = styled.div`
   flex-flow: row nowrap;
   align-items: center;
   align-content: center;
-  font-size: 1.2rem;
+  font-size: 1em;
 `;
 
 const PriceWrapper = styled.div`
@@ -126,7 +127,7 @@ const PriceWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: 0.8em;
   font-weight: 700;
   color: #3b3e48;
   padding-top: 2px;

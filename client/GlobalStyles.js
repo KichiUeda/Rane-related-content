@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const ColWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
+  box-sizing: border-box;
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: ${({ width }) => (width ? width : "auto")};
   height: ${({ height }) => (height ? height : "auto")};
   justify-content: ${({ justify }) => (justify ? justify : "normal")};
@@ -15,12 +17,13 @@ export const ColWrapper = styled.div`
   background-color: ${({ backgroundColor }) =>
     backgroundColor ? backgroundColor : "none"};
   cursor: ${({ cursor }) => (cursor ? cursor : "arrow")};
-  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 `;
 
 export const RowWrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  box-sizing: border-box;
+  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: ${({ width }) => (width ? width : "auto")};
   height: ${({ height }) => (height ? height : "auto")};
   justify-content: ${({ justify }) => (justify ? justify : "normal")};
@@ -32,5 +35,4 @@ export const RowWrapper = styled.div`
   background-color: ${({ backgroundColor }) =>
     backgroundColor ? backgroundColor : "none"};
   cursor: ${({ cursor }) => (cursor ? cursor : "arrow")};
-  font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 `;

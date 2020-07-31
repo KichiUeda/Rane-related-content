@@ -23,6 +23,7 @@ module.exports = {
           presets: ["@babel/preset-env", "@babel/preset-react"],
           plugins: [
             "babel-plugin-styled-components",
+            "@quickbaseoss/babel-plugin-styled-components-css-namespace",
             "@babel/plugin-transform-runtime",
             "@babel/plugin-transform-react-jsx",
           ],
