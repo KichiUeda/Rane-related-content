@@ -9,7 +9,7 @@ import Card from "./Card";
 const Carousel = ({ cardData }) => {
   return (
     <CarouselWrapper>
-      <ColWrapper margin="15px 0 0 0">
+      <ColWrapper margin="0">
         <ColWrapper
           justify="flex-start"
           alignItems="flex-start"
