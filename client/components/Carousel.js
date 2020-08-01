@@ -55,7 +55,7 @@ const CarouselWrapper = styled.div`
 
 const SectionHead = styled.h2`
   color: #a1a7b2;
-  font-size: 1.4rem;
+  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
