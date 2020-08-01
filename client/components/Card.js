@@ -46,7 +46,7 @@ const Card = ({ title, thumbnail, platforms, os, priceData, product_id }) => {
       >
         <TitleWrapper data-testid="title-span">{title}</TitleWrapper>
         <IconWrapper data-testid="star-icon">
-          <AiOutlineStar style={{ fontSize: "16px" }} />
+          <AiOutlineStar style={{ fontSize: "18px", color: "#CCCCCC" }} />
         </IconWrapper>
       </RowWrapper>
       <RowWrapper
@@ -90,6 +90,8 @@ export default Card;
 
 const TitleWrapper = styled.span`
   font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #494f5c;
+  font-weight: 700;
   font-size: 1em;
   width: 227px;
 `;
